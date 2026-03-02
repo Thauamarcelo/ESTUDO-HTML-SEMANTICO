@@ -14,5 +14,10 @@ Projeto feito para anotações de HTML semântico.
 Transformar minhas anotações em um site organizado e visual.
 
 ---
+## 🌐 Site publicado
+
+Acesse aqui:  
+🔗 https://thauamarcelo.github.io/ESTUDO-HTML-SEMANTICO/
+
 
 Feito por Thauã 🚀
