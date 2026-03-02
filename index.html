@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- Informa ao navegador que estamos usando HTML5 -->
+
+<html lang="pt-BR">
+<!-- Elemento raiz do documento -->
+
+<head>
+    <!-- Metadados (não aparecem visualmente) -->
+
+    <meta charset="UTF-8">
+    <!-- Permite acentos, símbolos e emojis -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade -->
+
+    <meta name="description"
+        content="Guia completo de HTML semântico explicando estrutura, significado e funcionamento do navegador.">
+
+    <title>Guia Completo de HTML Semântico</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Cabeçalho principal -->
+
+        <h1>HTML SEMÂNTICO EXPLICADO COM HTML</h1>
+        <p>Este site usa HTML semântico para ensinar HTML semântico.</p>
+
+        <nav>
+            <!-- Navegação principal -->
+            <ul>
+                <li><a href="#estrutura">Estrutura</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#semantica">Semântica</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#quebra">Quebra & Símbolos</a></li>
+                <li><a href="#midia">Mídia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="estrutura">
+            <h2>Estrutura Base do HTML</h2>
+
+            <article>
+                <p>Veja como é a estrutura mínima de um documento HTML:</p>
+
+                <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Conteúdo visível
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+                <p>
+                    &lt;head&gt; → Contém metadados.
+                    <br>
+                    &lt;body&gt; → Contém o conteúdo visível.
+                </p>
+            </article>
+        </section>
+
+        <section id="dados">
+            <h2>Representação de Dados</h2>
+
+            <article>
+                <ul>
+                    <li>Bit → 0 ou 1</li>
+                    <li>Byte → 8 bits</li>
+                    <li>UTF-8 → código multibyte</li>
+                    <li>1024 bytes = 1 KB</li>
+                    <li>1024 KB = 1 MB</li>
+                    <li>1024 MB = 1 GB</li>
+                </ul>
+
+                <p><strong>MB (armazenamento) ≠ Mb (transmissão)</strong></p>
+            </article>
+        </section>
+
+        <section id="semantica">
+            <h2>Semântica no HTML5</h2>
+
+            <article>
+                <h3>Negrito</h3>
+
+                <p>Forma visual (não semântica):</p>
+
+                <pre><code>
+&lt;b&gt;Texto em negrito&lt;/b&gt;
+</code></pre>
+
+                <p>Significado semântico:</p>
+
+                <pre><code>
+&lt;strong&gt;Texto importante&lt;/strong&gt;
+</code></pre>
+            </article>
+
+            <article>
+                <h3>Itálico</h3>
+
+                <pre><code>
+&lt;i&gt;Texto em itálico&lt;/i&gt;
+</code></pre>
+
+                <pre><code>
+&lt;em&gt;Texto com ênfase semântica&lt;/em&gt;
+</code></pre>
+            </article>
+        </section>
+
+        <section id="listas">
+            <h2>Tipos de Listas</h2>
+
+            <article>
+                <h3>Lista Ordenada</h3>
+
+                <pre><code>
+&lt;ol type="I"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+            </article>
+
+            <article>
+                <h3>Lista Não Ordenada</h3>
+
+                <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+            </article>
+
+            <article>
+                <h3>Lista de Definição</h3>
+
+                <pre><code>
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;É sobre significado.&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+            </article>
+        </section>
+
+        <section id="quebra">
+            <h2>QUEBRA DE LINHA, EMOJIS E SÍMBOLOS</h2>
+
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Parágrafos&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Parágrafo e quebra de linha&lt;/h1&gt;
+    &lt;hr&gt;
+
+    &lt;p&gt;Pode ser usado:&lt;/p&gt;&lt;br&gt;
+
+    &lt;p&gt;&amp;reg; - marca registrada&lt;/p&gt;
+    &lt;p&gt;&amp;copy; - copyright&lt;/p&gt;
+    &lt;p&gt;&amp;trade; - trademark&lt;/p&gt;
+    &lt;p&gt;&amp;yen; - moeda japonesa&lt;/p&gt;
+    &lt;p&gt;&amp;euro; - euro&lt;/p&gt;
+
+    &lt;hr&gt;
+
+    &lt;h1&gt;Vamos colocar emojis agora&lt;/h1&gt;
+    &lt;hr&gt;
+
+    &lt;p&gt;&amp;#x1F917;&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+            <p>
+                &lt;br&gt; → quebra de linha
+                <br>
+                &lt;hr&gt; → linha horizontal
+            </p>
+        </section>
+
+        <section id="midia">
+            <h2>Imagens Responsivas</h2>
+
+            <pre><code>
+&lt;picture&gt;
+  &lt;source media="(max-width: 800px)" srcset="imagem-pequena.png"&gt;
+  &lt;img src="imagem-grande.png" alt="Imagem flexível"&gt;
+&lt;/picture&gt;
+</code></pre>
+
+            <h2>Áudio no Site</h2>
+
+            <pre><code>
+&lt;audio controls preload="metadata"&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  &lt;source src="audio.ogg" type="audio/ogg"&gt;
+&lt;/audio&gt;
+</code></pre>
+        </section>
+
+        <section>
+            <h2>Tipos de TLD</h2>
+
+            <ul>
+                <li>.com → Comercial</li>
+                <li>.org → Organizações</li>
+                <li>.net → Redes</li>
+                <li>.br → Brasil</li>
+                <li>.gov → Governo</li>
+                <li>.edu → Educação</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <aside>
+        <h2>Referências</h2>
+        <ul>
+            <li>MDN</li>
+            <li>W3C</li>
+            <li>WHATWG Living Standard</li>
+            <li>W3Schools</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 - Guia de HTML Semântico</p>
+    </footer>
+
+</body>
+
+</html>
